@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mis Lugares</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="accion_mostrar">Mostrar Lugares</string>
+    <string name="accion_preferencias">Preferencias</string>
+    <string name="accion_salir">Salir</string>
+    <string name="accion_acercaDe">Acerca De</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre:</string>
+    <string name="hintNombre">Algo que identifique el lugar</string>
+    <string name="tipo">Tipo:</string>
+    <string name="direccion">Dirección:</string>
+    <string name="hintDireccion">Dirección del lugar</string>
+    <string name="telefono">Teléfono:</string>
+    <string name="telefonoHint">Tlf. de contacto</string>
+    <string name="URL">URL:</string>
+    <string name="urlHint">Sitio web</string>
+    <string name="comentario">Comentario:</string>
+    <string name="comentarioHint">Introduce tus notas</string>
+    <string name="acercaDe">Este programa ha sido desarrollado como ejemplo en el curso de 
+        						Android para demostrar cómo se pueden lanzar nuevas actividades 
+        						desde la actividad principal.</string>
+    <string name="actionSearch">Buscar</string>
+    <string name="descpTipo">Logo del tipo</string>
+    <string name="nombreLugar">Nombre del lugar</string>
+    <string name="tipoLugar">Tipo del lugar</string>
+    <string name="direccionLugar">Direccion</string>
+    <string name="descpLlamada">Imagen telefono</string>
+    <string name="telefonoLugar">Teléfono</string>
+    <string name="descpURL">Logo URL</string>
+    <string name="urlLugar">URL</string>
+    <string name="descpComentario">Logo Comentario</string>
+    <string name="comentarioLugar">Comentario</string>
+    <string name="descpCalendario">Logo Calendario</string>
+    <string name="calendario">Calendario</string>
+    <string name="descpHora"></string>
+    <string name="hora">Hora</string>
+    <string name="descpFoto">Imagen foto</string>
+    <string name="descpEPSG">Imagen</string>
+    <string name="descpCamera">Imagen Camara</string>
+    <string name="descpGaleria">Imagen Galeria</string>
+    <string name="distancia">... Km</string>
+    <string name="eliminarFoto">Eliminar foto</string>
+    <string name="opEditar">Editar</string>
+    <string name="opBorrar">Borrar</string>
+    <string name="opCompartir">Compartir</string>
+    <string name="nombres_del_lugar">Nombres del lugar</string>
+
+	<string name="noHayLugares">No hay lugares</string>
+</resources>

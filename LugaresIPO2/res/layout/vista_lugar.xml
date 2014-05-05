@@ -1,0 +1,214 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/t_nombreLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/nombreLugar" 
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:id="@+id/logo_tipo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/descpTipo"
+                android:src="@drawable/otros" />
+            <TextView
+                android:id="@+id/tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/tipoLugar" />
+            
+        </LinearLayout>     
+
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="verMapa" >
+
+            <ImageView
+                android:id="@+id/imgDireccion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/descpTipo"
+                android:src="@android:drawable/ic_menu_myplaces" />
+
+            <TextView
+                android:id="@+id/t_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/direccionLugar" />
+            
+        </LinearLayout>
+        
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="llamadaTelefono" >
+
+            <ImageView
+                android:id="@+id/imgTelefono"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_call" 
+                android:contentDescription="@string/descpLlamada"/>
+
+            <TextView
+                android:id="@+id/t_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/telefonoLugar" />
+            
+        </LinearLayout>
+        
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:onClick="pgWeb" >
+
+            <ImageView
+                android:id="@+id/imgURL"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_mapmode" 
+                android:contentDescription="@string/descpURL"/>
+
+            <TextView
+                android:id="@+id/t_URL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/urlLugar" />
+            
+        </LinearLayout>
+        
+		<LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgComentario"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_info_details" 
+                android:contentDescription="@string/descpComentario"/>
+
+            <TextView
+                android:id="@+id/t_Comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/comentarioLugar" />
+
+            
+        </LinearLayout>
+        
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+            
+		     <ImageView
+                android:id="@+id/imgCalendario"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_my_calendar" 
+                android:contentDescription="@string/descpCalendario"/>
+
+            <TextView
+                android:id="@+id/t_Calendario"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/calendario" />
+
+            <ImageView
+                android:id="@+id/imgHora"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_recent_history" 
+                android:contentDescription="@string/descpHora"/>
+
+            <TextView
+                android:id="@+id/t_Hora"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/hora" />
+            
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/valoracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:rating="3" />
+
+
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/foto_epsg" 
+                android:contentDescription="@string/descpEPSG"/>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" >
+                
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:contentDescription="@string/descpCamera" 
+                    android:onClick="tomarFoto" />
+                
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:contentDescription="@string/descpGaleria" 
+                    android:onClick="galeria" />
+                
+                <ImageView  
+    				android:layout_width="40dp" 
+    				android:layout_height="40dp" 
+    				android:contentDescription="@string/eliminarFoto" 
+    				android:onClick="eliminarFoto" 
+    				android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
